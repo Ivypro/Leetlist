@@ -1,0 +1,79 @@
+#topbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 42px;
+  background: rgb(30,30,30);
+  width: 100%;
+  font-family: arial;
+  border-bottom: solid 3px rgb(150,150,150);
+  cursor: default;
+}
+
+#brand {
+  display: inline-block;
+  position: relative;
+    font-size: 1.75rem;
+      color:  rgba(255,255,0,0.85);
+  top: 6px;
+  left: 30px;
+}
+
+#slogan {
+  display: inline-block;
+  position: relative;
+  color: silver;
+  top: 6px;
+  left: 50px;
+  font-size: .73rem;
+}
+
+#seg {
+  display: inline-block;
+  position: relative;
+  top: 6.5px;
+  height: 18px;
+  left: 75px;
+  border-left: solid 2px silver;
+}
+
+#tainer {
+  display: inline-block;
+  position: relative;
+    color:  rgba(255,255,0,0.85);
+  top: 6px;
+  left: 85px;
+    font-size: .73rem;
+    cursor: pointer;
+}
+
+.atainer {
+  color:  rgba(255,255,0,0.85);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.atainer:hover {
+color: darkgrey;
+}
+
+#tainer2 {
+  display: inline-block;
+  position: relative;
+  color: silver;
+  top: 6px;
+  left: 85px;
+    font-size: .73rem;
+    cursor: default;
+}
+
+.atainer2 {
+  color: silver;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.atainer2:hover {
+color: darkgrey;
+cursor: context-menu;
+}
