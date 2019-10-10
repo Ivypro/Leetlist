@@ -7,7 +7,7 @@
 <a onclick="x2()"><div class="social-head-x">X</div></a>
    </div>
 
-<router-outlet name="routetwo"></router-outlet>
+<router-outlet name="social"></router-outlet>
 
     </div>
 
@@ -25,7 +25,11 @@
   <img src="assets/usericon.png" width="80" >
   <br>Social Profile
   </div>
-  <div class="social-profile-line"><a onclick="open2()">Friends</a><br><br>Photos<br><br>Rating & Reviews<br><br></div>
+  <div class="social-profile-line">
+    <a onclick="open2()" class="pf-line" [routerLink]='[{ outlets: { social: ["friends"] } }]'>Friends</a>
+    <br><br><a onclick="open2()" class="pf-line" [routerLink]='[{ outlets: { social: ["photos"] } }]'>Photos</a>
+    <br><br><a onclick="open2()" class="pf-line"  [routerLink]='[{ outlets: { social: ["rating"] } }]'>Rating & Reviews</a>
+    <br><br></div>
 
 </div>
 
@@ -36,6 +40,7 @@
 <div class="item-obj">Find Friends</div>
 <div class="item-obj">Guides</div>
 <div class="item-obj">Mentors</div>
+<div class="item-obj">Karma</div>
 <!-- <div class="item-obj">News/Podcast</div> -->
 <div class="bar-obj">Community BAR</div>
 

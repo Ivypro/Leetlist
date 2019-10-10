@@ -7,6 +7,10 @@ import { CitiesComponent } from "./cities/cities.component";
 import { BlankComponent } from "./blank/blank.component";
 import { BarComponent } from "./bar/bar.component";
 
+import { FriendsComponent } from "./friends/friends.component";
+import { PhotosComponent } from "./photos/photos.component";
+import { RatingComponent } from "./rating/rating.component";
+
 const routes: Routes = [
   {
     path: 'post',
@@ -23,11 +27,26 @@ const routes: Routes = [
   {
     path: 'bar',
     component: BarComponent
-  }
+  },
   {
     path: '',
     component: BlankComponent,
-    outlet: "routetwo"
+    outlet: "social"
+  },
+  {
+    path: 'friends',
+    component: FriendsComponent,
+    outlet: "social"
+  },
+  {
+    path: 'photos',
+    component: PhotosComponent,
+    outlet: "social"
+  },
+  {
+    path: 'rating',
+    component: RatingComponent,
+    outlet: "social"
   }
 ];
 

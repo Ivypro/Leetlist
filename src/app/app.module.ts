@@ -9,6 +9,9 @@ import { PostComponent } from './post/post.component';
 import { CitiesComponent } from './cities/cities.component';
 import { BlankComponent } from './blank/blank.component';
 import { BarComponent } from './bar/bar.component';
+import { FriendsComponent } from './friends/friends.component';
+import { PhotosComponent } from './photos/photos.component';
+import { RatingComponent } from './rating/rating.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { BarComponent } from './bar/bar.component';
     PostComponent,
     CitiesComponent,
     BlankComponent,
-    BarComponent
+    BarComponent,
+    FriendsComponent,
+    PhotosComponent,
+    RatingComponent
   ],
   imports: [
     BrowserModule,

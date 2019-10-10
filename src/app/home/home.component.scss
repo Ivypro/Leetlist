@@ -101,6 +101,17 @@
   width: 142px;
 }
 
+.pf-line {
+  cursor: default;
+  color: white;
+  text-decoration: none;
+}
+
+.pf-line:hover {
+    cursor: pointer;
+text-decoration: underline;
+}
+
 .col-one {
 // border: dotted 2px red;
   display: inline-block;
