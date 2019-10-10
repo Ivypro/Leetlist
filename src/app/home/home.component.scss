@@ -22,7 +22,6 @@
 #route {
   position: absolute;
   display: none;
-  background-color: red;
   top: 1px;
   transform: translateX(-50%);
   z-index: 100;
@@ -31,6 +30,56 @@
   width: 992px;
   border: solid 1px grey;
   background: rgba(0,0,0,0.9)
+}
+
+#route-2 {
+  position: absolute;
+  display: none;
+  top: 0px;
+  height: calc(100% - 50px);
+  width: 992px;
+  transform: translateX(-50%);
+  z-index: 100;
+  left: 50%;
+  border: solid 1px grey;
+  background: rgba(75,75,75,0.95);
+  animation: fadein 1s;
+}
+
+@keyframes fadein {
+  0% { opacity: 0;
+          left: 25%;
+        height: 100px;
+         width: 100px;
+      }
+  100%   { opacity: 1;
+           height: calc(100% - 50px);
+           width: 992px;
+     }
+}
+
+.social-head {
+  height: 30px;
+  width: 100%;
+  padding-top: 10px;
+  background-color: grey;
+}
+
+.social-head-x {
+  position: absolute;
+  right: 10px;
+  top: 6px;
+  padding-left: 10px;
+  border-radius: 5px;
+  padding-top: 5px;
+  height: 21px;
+  width: 21px;
+  background-color: rgb(50,50,50);
+}
+
+.social-head-x:hover {
+  background-color: rgb(100,100,100);
+  cursor: pointer;
 }
 
 .social-profile {

@@ -24,6 +24,11 @@ const routes: Routes = [
     path: 'bar',
     component: BarComponent
   }
+  {
+    path: '',
+    component: BlankComponent,
+    outlet: "routetwo"
+  }
 ];
 
 @NgModule({

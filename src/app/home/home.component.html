@@ -1,11 +1,22 @@
 <div id="home">
 <div id="core">
 
+  <div id="route-2">
+    <div class="social-head">
+&nbsp; &nbsp; &nbsp; &nbsp; Social Profile
+<a onclick="x2()"><div class="social-head-x">X</div></a>
+   </div>
+
+<router-outlet name="routetwo"></router-outlet>
+
+    </div>
+
   <div id="route">
 
 <router-outlet></router-outlet>
 
     </div>
+
 
   <div class="col-one">
 
@@ -14,7 +25,7 @@
   <img src="assets/usericon.png" width="80" >
   <br>Social Profile
   </div>
-  <div class="social-profile-line">Friends<br><br>Photos<br><br>Rating & Reviews<br><br></div>
+  <div class="social-profile-line"><a onclick="open2()">Friends</a><br><br>Photos<br><br>Rating & Reviews<br><br></div>
 
 </div>
 
@@ -91,7 +102,7 @@
     <div class="item-obj">Rent Rooms</div>
 
     <a style="color:white" onclick="openup()" [routerLink]='["bar"]'>
-      <div class="bar-obj">Housing BAR</div>
+      <div class="bar-obj">Roommate BAR</div>
     </a>
   </div>
 
@@ -112,6 +123,7 @@
     <div class="item-obj">Medical</div>
     <div class="item-obj">Legal</div>
     <div class="item-obj">Government</div>
+    <div class="item-obj">Financial</div>
   </div>
 
 
