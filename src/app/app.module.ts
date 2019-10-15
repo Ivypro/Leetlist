@@ -12,6 +12,8 @@ import { BarComponent } from './bar/bar.component';
 import { FriendsComponent } from './friends/friends.component';
 import { PhotosComponent } from './photos/photos.component';
 import { RatingComponent } from './rating/rating.component';
+import { GiguComponent } from './gigu/gigu.component';
+import { RbarComponent } from './rbar/rbar.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { RatingComponent } from './rating/rating.component';
     BarComponent,
     FriendsComponent,
     PhotosComponent,
-    RatingComponent
+    RatingComponent,
+    GiguComponent,
+    RbarComponent
   ],
   imports: [
     BrowserModule,

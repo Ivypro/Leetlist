@@ -2,7 +2,7 @@
 <div id="core">
 
   <div id="route-2">
-    <div class="social-head">
+    <div class="social-head2">
 &nbsp; &nbsp; &nbsp; &nbsp; Social Profile
 <a onclick="x2()"><div class="social-head-x">X</div></a>
    </div>
@@ -10,6 +10,11 @@
 <router-outlet name="social"></router-outlet>
 
     </div>
+
+    <div id="popup">
+
+  <router-outlet name="pop"></router-outlet>
+      </div>
 
   <div id="route">
 
@@ -42,7 +47,7 @@
 <div class="item-obj">Mentors</div>
 <div class="item-obj">Karma</div>
 <!-- <div class="item-obj">News/Podcast</div> -->
-<div class="bar-obj">Community BAR</div>
+<div class="bar-obj">Community Bar</div>
 
 </div>
 
@@ -53,7 +58,7 @@
   <div class="item-obj">Parties</div>
   <div class="item-obj">Classes</div>
   <!-- <div class="item-obj">Rendevus</div> -->
-  <div class="bar-obj">Grass BAR</div>
+  <div class="bar-obj">Grass Bar</div>
 
 </div>
 
@@ -70,10 +75,12 @@
     <div class="item-obj">Gadgets</div>
     <div class="item-obj">Tickets</div>
     <div class="item-obj">Vehicles</div>
+    <div class="item-obj">Home Cooking</div>
     <div class="item-obj">Other</div>
 
+    <!-- <div class="bar-obj">Shops</div> -->
     <div class="bar-obj">Shops</div>
-    <div class="bar-obj">Delivery</div>
+    <div class="bar-obj2">Work Delivery</div>
   </div>
 
   <div class="item-two">
@@ -106,23 +113,27 @@
     <div class="item-obj">Vacation Stays</div>
     <div class="item-obj">Rent Rooms</div>
 
-    <a style="color:white" onclick="openup()" [routerLink]='["bar"]'>
-      <div class="bar-obj">Roommate BAR</div>
+    <a style="color:white" onclick="open3()" [routerLink]='[{ outlets: { pop: ["rbar"] } }]'>
+      <div class="bar-obj">Roommate Bar</div>
     </a>
   </div>
 
   <div class="item-two">
     <div class="item-head">Gigs</div>
-    <div class="item-obj">computer</div>
-    <div class="item-obj">creative</div>
-    <div class="item-obj">domestic</div>
-    <div class="item-obj">event</div>
+    <div class="item-obj gold">computer</div>
+    <div class="item-obj out">creative</div>
+    <div class="item-obj out">domestic</div>
+    <div class="item-obj out">event</div>
     <div class="item-obj">labor</div>
     <div class="item-obj">talent</div>
-    <div class="item-obj">writing</div>
+    <div class="item-obj out">writing</div>
+
+    <a style="color:white" onclick="open3()" [routerLink]='[{ outlets: { pop: ["gigu"] } }]'>
+      <div class="bar-obj3">Gig University</div>
+      </a>
   </div>
 
-  <div class="item-two">
+  <div class="item-two out">
     <div class="item-head">Jobs</div>
     <div class="item-obj">Tech</div>
     <div class="item-obj">Medical</div>

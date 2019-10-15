@@ -1,0 +1,24 @@
+.social-head2 {
+  height: 30px;
+  width: 100%;
+  padding-top: 10px;
+  background-color: rgb(125,125,125);
+}
+
+.social-head-x {
+  color: white;
+  position: absolute;
+  right: 10px;
+  top: 6px;
+  padding-left: 10px;
+  border-radius: 5px;
+  padding-top: 5px;
+  height: 21px;
+  width: 21px;
+  background-color: rgb(50,50,50);
+}
+
+.social-head-x:hover {
+  background-color: rgb(100,100,100);
+  cursor: pointer;
+}

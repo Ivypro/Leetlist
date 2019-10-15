@@ -1,0 +1,84 @@
+.social-head2 {
+  height: 30px;
+  width: 100%;
+  padding-top: 10px;
+  background-color: rgb(106,106,80);
+}
+
+.social-head-x {
+  color: white;
+  position: absolute;
+  right: 10px;
+  top: 6px;
+  padding-left: 10px;
+  border-radius: 5px;
+  padding-top: 5px;
+  height: 21px;
+  width: 21px;
+  background-color: rgb(50,50,50);
+}
+
+.social-head-x:hover {
+  background-color: rgb(100,100,100);
+  cursor: pointer;
+}
+
+.house {
+  height: calc(100% - 40px);
+  overflow: scroll;
+}
+
+
+.centered {
+  position: relative;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  width: 650px;
+  // border: solid 1px rgba(255,255,255,0.5);
+  padding-top: 60px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 25px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  text-align: center;
+  background-color: rgb(20,40,40);
+}
+
+.ab-write {
+  top: 10px;
+  right: 20px;
+  font-size: 1rem;
+  border: solid 1px yellow;
+  position: absolute;
+  border-radius: 4px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.ab-write:hover {
+  background-color: rgba(255,255,255,0.2);
+}
+
+.ab-price {
+  top: 10px;
+  left: 20px;
+  font-size: 1rem;
+  background-color: rgb(100,100,100);
+  position: absolute;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.soon {
+margin: 0 auto;
+margin-top: 35px;
+  font-size: 1rem;
+  border: solid 1px grey;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.centered-text {
+  font-size: 1.1rem;
+}
