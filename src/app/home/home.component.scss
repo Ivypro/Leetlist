@@ -101,7 +101,7 @@
   height: 30px;
   width: 100%;
   padding-top: 10px;
-  background-color: darkgrey;
+  background-color: rgb(120,120,120);
 }
 
 .social-head-x {
@@ -296,4 +296,62 @@ margin-top: 20px;
   display: inline-block;
   width: calc(100% - 0px);
   background: rgb(100,100,100);
+}
+
+.soc-dots {
+  border: dotted 1px green;
+}
+
+.soc-house {
+  display: inline-block;
+  height: calc(100% - 40px);
+  width: 200px;
+  background-color: rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+.soc-output {
+  vertical-align: top;
+  width: calc(100% - 200px);
+  height: calc(100% - 40px);
+  display: inline-block;
+  background-color: rgba(0,0,0,0.1);
+}
+
+.sg-activatedLink {
+  background-color: white;
+  color: black !important;
+}
+
+.sh-item {
+  font-size: 1.2rem;
+  display: inline-block;
+  text-align: center;
+  padding-top: 8px;
+  border-radius: 6px;
+  margin-top: 10px;
+  width: 150px;
+  height: 30px;
+  border: solid 2px rgba(0,0,0,0);
+  background-color: rgba(200,200,200,0.3);
+  cursor: pointer;
+  color: white;
+}
+
+.sh-item:hover {
+  border: dotted 2px white;
+}
+
+.g-div {
+  width: 60%;
+  height: 1px;
+  margin-top: 15px;
+  border: dotted 1px green;
+}
+
+.w-div {
+  width: 60%;
+  height: 1px;
+  margin-top: 15px;
+  border: dotted 1px white;
 }

@@ -2,17 +2,37 @@
 <div id="core">
 
   <div id="route-2">
+
     <div class="social-head2">
 &nbsp; &nbsp; &nbsp; &nbsp; Social Profile
 <a onclick="x2()"><div class="social-head-x">X</div></a>
    </div>
 
-<router-outlet name="social"></router-outlet>
+   <div class="soc-house">
 
+<a [routerLink]='[{ outlets: { social: ["friends"] } }]' routerLinkActive="sg-activatedLink">
+  <div class="sh-item">Friends</div>
+</a>
+<br>
+<a [routerLink]='[{ outlets: { social: ["photos"] } }]' routerLinkActive="sg-activatedLink"><div class="sh-item">Photos</div></a>
+<br>
+<a [routerLink]='[{ outlets: { social: ["rating"] } }]' routerLinkActive="sg-activatedLink"><div class="sh-item">Ratings</div></a>
+<br>
+<hr class="g-div">
+<div class="sh-item">Parties</div>
+<br>
+<div class="sh-item">Karma</div>
+<hr class="w-div">
+<div class="sh-item">Information</div>
+
+   </div>
+<div class="soc-output">
+<router-outlet name="social"></router-outlet>
+</div>
     </div>
 
-    <div id="popup">
 
+    <div id="popup">
   <router-outlet name="pop"></router-outlet>
       </div>
 
@@ -45,7 +65,8 @@
 <div class="item-obj">Find Friends</div>
 <div class="item-obj">Guides</div>
 <div class="item-obj">Mentors</div>
-<div class="item-obj">Karma</div>
+<div class="item-obj soc-dots">Karma</div>
+<div class="item-obj">Investors</div>
 <!-- <div class="item-obj">News/Podcast</div> -->
 <div class="bar-obj">Community Bar</div>
 
@@ -55,7 +76,7 @@
 <div class="item-two">
   <div class="item-head">Events</div>
   <div class="item-obj">Concerts</div>
-  <div class="item-obj">Parties</div>
+  <div class="item-obj soc-dots">Parties</div>
   <div class="item-obj">Classes</div>
   <!-- <div class="item-obj">Rendevus</div> -->
   <div class="bar-obj">Grass Bar</div>
@@ -75,7 +96,8 @@
     <div class="item-obj">Gadgets</div>
     <div class="item-obj">Tickets</div>
     <div class="item-obj">Vehicles</div>
-    <div class="item-obj">Home Cooking</div>
+    <!-- <div class="item-obj">Home Cooking</div> -->
+    <div class="item-obj">Beats</div>
     <div class="item-obj">Other</div>
 
     <!-- <div class="bar-obj">Shops</div> -->
@@ -121,12 +143,12 @@
   <div class="item-two">
     <div class="item-head">Gigs</div>
     <div class="item-obj gold">computer</div>
-    <div class="item-obj out">creative</div>
-    <div class="item-obj out">domestic</div>
-    <div class="item-obj out">event</div>
+    <div class="item-obj">creative</div>
+    <div class="item-obj">domestic</div>
+    <div class="item-obj">event</div>
     <div class="item-obj">labor</div>
     <div class="item-obj">talent</div>
-    <div class="item-obj out">writing</div>
+    <div class="item-obj">writing</div>
 
     <a style="color:white" onclick="open3()" [routerLink]='[{ outlets: { pop: ["gigu"] } }]'>
       <div class="bar-obj3">Gig University</div>
