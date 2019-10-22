@@ -13,6 +13,9 @@ import { GiguComponent } from "./gigu/gigu.component";
 import { FriendsComponent } from "./friends/friends.component";
 import { PhotosComponent } from "./photos/photos.component";
 import { RatingComponent } from "./rating/rating.component";
+import { KarmaComponent } from "./karma/karma.component";
+import { PartiesComponent } from "./parties/parties.component";
+import { InfoComponent } from "./info/info.component";
 
 const routes: Routes = [
   {
@@ -54,6 +57,21 @@ const routes: Routes = [
   {
     path: 'rating',
     component: RatingComponent,
+    outlet: "social"
+  },
+  {
+    path: 'karma',
+    component: KarmaComponent,
+    outlet: "social"
+  },
+  {
+    path: 'parties',
+    component: PartiesComponent,
+    outlet: "social"
+  },
+  {
+    path: 'info',
+    component: InfoComponent,
     outlet: "social"
   }
 ];

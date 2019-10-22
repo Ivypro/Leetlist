@@ -4,26 +4,41 @@
   <div id="route-2">
 
     <div class="social-head2">
-&nbsp; &nbsp; &nbsp; &nbsp; Social Profile
+&nbsp; &nbsp; &nbsp; &nbsp; Terminal
 <a onclick="x2()"><div class="social-head-x">X</div></a>
    </div>
 
    <div class="soc-house">
 
-<a [routerLink]='[{ outlets: { social: ["friends"] } }]' routerLinkActive="sg-activatedLink">
-  <div class="sh-item">Friends</div>
-</a>
+
+  <div class="sh-item" [routerLink]='[{ outlets: { social: ["friends"] } }]' routerLinkActive="sg-activatedLink">Friends</div>
+
 <br>
-<a [routerLink]='[{ outlets: { social: ["photos"] } }]' routerLinkActive="sg-activatedLink"><div class="sh-item">Photos</div></a>
+
+
+  <div class="sh-item" [routerLink]='[{ outlets: { social: ["photos"] } }]' routerLinkActive="sg-activatedLink">Photos</div>
+
 <br>
-<a [routerLink]='[{ outlets: { social: ["rating"] } }]' routerLinkActive="sg-activatedLink"><div class="sh-item">Ratings</div></a>
+
+
+  <div class="sh-item" [routerLink]='[{ outlets: { social: ["rating"] } }]' routerLinkActive="sg-activatedLink">Rating</div>
+
 <br>
 <hr class="g-div">
-<div class="sh-item">Parties</div>
+
+
+<div class="sh-item" [routerLink]='[{ outlets: { social: ["parties"] } }]' routerLinkActive="sg-activatedLink">Parties</div>
+
 <br>
-<div class="sh-item">Karma</div>
+
+
+<div class="sh-item" [routerLink]='[{ outlets: { social: ["karma"] } }]' routerLinkActive="sg-activatedLink">Karma</div>
+
 <hr class="w-div">
-<div class="sh-item">Information</div>
+
+
+<div class="sh-item" [routerLink]='[{ outlets: { social: ["info"] } }]' routerLinkActive="sg-activatedLink">Information</div>
+
 
    </div>
 <div class="soc-output">
@@ -45,16 +60,17 @@
 
   <div class="col-one">
 
-<div class="item-one">
+<div class="item-one"><br>
   <div class="social-profile">
   <img src="assets/usericon.png" width="80" >
   <br>Social Profile
   </div>
-  <div class="social-profile-line">
-    <a onclick="open2()" class="pf-line" [routerLink]='[{ outlets: { social: ["friends"] } }]'>Friends</a>
-    <br><br><a onclick="open2()" class="pf-line" [routerLink]='[{ outlets: { social: ["photos"] } }]'>Photos</a>
-    <br><br><a onclick="open2()" class="pf-line"  [routerLink]='[{ outlets: { social: ["rating"] } }]'>Rating & Reviews</a>
-    <br><br></div>
+  <div class="social-profile-line"><br>
+    <div onclick="open2()" class="pf-line alt-pf no-rd" [routerLink]='[{ outlets: { social: ["friends"] } }]'>Friends</div>
+    <div onclick="open2()" class="pf-line alt-pf no-rd" [routerLink]='[{ outlets: { social: ["photos"] } }]'>Photos</div>
+    <div onclick="open2()" class="pf-line alt-pf no-rd"  [routerLink]='[{ outlets: { social: ["rating"] } }]'>Rating</div><br>
+    <!-- <div onclick="open2()" class="pf-line alt-pf no-rd"  [routerLink]='[{ outlets: { social: ["info"] } }]'>Settings</div> -->
+    </div>
 
 </div>
 
@@ -62,10 +78,16 @@
 <div class="item-two">
 <div class="item-head">Community</div>
 <div class="item-obj">Dates</div>
-<div class="item-obj">Find Friends</div>
+
+<a style="color:white" onclick="open2()" [routerLink]='[{ outlets: { social: ["friends"] } }]'>
+<div class="item-obj grey-dot">Find Friends</div>
+</a>
+
 <div class="item-obj">Guides</div>
 <div class="item-obj">Mentors</div>
+<a style="color:white" onclick="open2()" [routerLink]='[{ outlets: { social: ["karma"] } }]'>
 <div class="item-obj soc-dots">Karma</div>
+</a>
 <div class="item-obj">Investors</div>
 <!-- <div class="item-obj">News/Podcast</div> -->
 <div class="bar-obj">Community Bar</div>
@@ -76,9 +98,13 @@
 <div class="item-two">
   <div class="item-head">Events</div>
   <div class="item-obj">Concerts</div>
+  <a style="color:white" onclick="open2()" [routerLink]='[{ outlets: { social: ["parties"] } }]'>
   <div class="item-obj soc-dots">Parties</div>
+  </a>
   <div class="item-obj">Classes</div>
   <!-- <div class="item-obj">Rendevus</div> -->
+  <div class="item-obj">Hot Charts</div>
+  <!-- <div class="item-obj">Sports Bets</div> -->
   <div class="bar-obj">Grass Bar</div>
 
 </div>
@@ -99,19 +125,20 @@
     <!-- <div class="item-obj">Home Cooking</div> -->
     <div class="item-obj">Beats</div>
     <div class="item-obj">Other</div>
-
+<div class="item-obj grey-dot">Shops</div>
     <!-- <div class="bar-obj">Shops</div> -->
-    <div class="bar-obj">Shops</div>
+    <div class="bar-obj teal-bg">Delivery</div>
     <div class="bar-obj2">Work Delivery</div>
   </div>
 
   <div class="item-two">
     <div class="item-head">Services</div>
+    <div class="item-obj gold">Tech</div>
     <div class="item-obj">Handy</div>
     <div class="item-obj">Beauty</div>
     <div class="item-obj">Creative</div>
     <div class="item-obj">Event</div>
-    <div class="item-obj">Decorative</div>
+    <!-- <div class="item-obj">Decorative</div> -->
     <div class="item-obj">Financial</div>
     <div class="item-obj">Home</div>
     <div class="item-obj">Labor/Move</div>
@@ -120,6 +147,7 @@
     <div class="item-obj">Pet</div>
     <div class="item-obj">Real Estate</div>
     <div class="item-obj">Writing</div>
+    <div class="item-obj">Talent / DJ</div>
   </div>
 
 </div>
