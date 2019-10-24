@@ -11,6 +11,7 @@
 #core {
   width: 992px;
   height: calc(100% - 150px);
+  min-height: 560px;
   // height: 80%;
   background: green;
   color: white;
@@ -102,7 +103,7 @@
   height: 30px;
   width: 100%;
   padding-top: 10px;
-  background-color: rgb(120,120,120);
+  background-color: rgb(90,90,90);
 }
 
 .social-head-x {
@@ -138,7 +139,7 @@
 .social-profile-line {
   display: inline-block;
   position: relative;
-  top: 2px;
+  top: 22px;
   border-bottom: solid 4px white;
   width: 142px;
   height: 120px;
@@ -352,11 +353,12 @@ margin-top: 20px;
   background-color: rgba(200,200,200,0.3);
   cursor: pointer;
   color: white;
+    border: solid 2px rgba(0,0,0,0.8);
 }
 
 .sh-item:hover {
-  border: dotted 2px rgba(0,0,0,0);
-  background-color: rgb(50,50,50);
+  border: solid 2px rgba(0,0,0,0.8);
+  background-color: rgb(150,150,150);
 }
 
 .sh-item:active {
@@ -364,7 +366,8 @@ margin-top: 20px;
 }
 
 .sg-activatedLink {
-  background-color: rgb(50,50,50);
+  background-color: rgb(40,40,40);
+  border: solid 2px rgba(250,250,250,0.5);
   outline: solid 0px red;
 }
 
