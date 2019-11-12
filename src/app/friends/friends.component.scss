@@ -1,0 +1,138 @@
+.tabhouse-1 {
+  border-left: solid 1px grey;
+  border-bottom: solid 1px grey;
+  padding: 10px;
+  color: grey;
+}
+
+.select-white:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.sel-line {
+  text-decoration: underline;
+}
+
+.base-1 {
+  // background-color: rgba(255,255,255,0.5);
+  width: 100%;
+  height: calc(100% - 39px);
+}
+
+.base-2 {
+  display: none;
+  background-color: rgba(255,255,255,0.5);
+  width: 100%;
+  height: calc(100% - 39px);
+}
+
+.friend-deck {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-left: 1px;
+  padding-top: 30px;
+  width: 270px;
+  height: 70px;
+  background-color: rgb(0,50,0);
+  cursor: pointer;
+  user-select: none;
+}
+
+.friend-deck:hover {
+  background-color: rgb(50,100,50);
+}
+
+.ban-history {
+  border-top: solid 1px white;
+  border-bottom: solid 1px white;
+  font-size: 1.3rem;
+}
+
+.h-history {
+  background-color: rgba(0,0,0,0.1);
+  height: calc(100% - 125px);
+  overflow: scroll;
+}
+
+.his-item {
+  background-color: rgba(255,255,255,0.5);
+  margin-top: 10px;
+  height: 70px;
+}
+
+.bcol-one {
+  display: inline-block;
+  vertical-align: top;
+  border-right: solid 1px white;
+  height: 100%;
+  width: 33%;
+
+}
+.bcol-two {
+  display: inline-block;
+  vertical-align: top;
+  height: 100%;
+  width: calc(67% - 1px);
+}
+
+.bcol-three {
+  display: inline-block;
+  vertical-align: top;
+  border-right: 1px white;
+  height: 100%;
+  width: 33%;
+
+}
+
+.add-friend {
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 10px;
+  height: 30px;
+  padding-top: 8px;
+  background-color: rgb(100,100,100);
+  border-radius: 30px;
+}
+
+.fh-1 {
+  display: inline-block;
+  vertical-align: top;
+  margin: 3px;
+  width: 30%;
+  border: solid 1px white;
+}
+
+.fh-2 {
+  display: inline-block;
+  vertical-align: top;
+  margin: 3px;
+    width: 30%;
+    height: 98%;
+  border: solid 1px white;
+}
+
+.fh-3 {
+  display: inline-block;
+  vertical-align: top;
+  margin: 3px;
+    width: 37%;
+    height: 98%;
+  border: solid 1px white;
+}
+
+.f3-bio {
+  border: solid 1px white;
+  width: 98%;
+  min-height: 300px;
+}
+
+.fb-one {
+  font-size: .95rem;
+  border: solid 1px grey;
+  border-radius: 5px;
+  padding: 3px;
+  margin: 5px;
+  display: inline-block;
+  width: 42%;
+}

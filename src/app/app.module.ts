@@ -17,6 +17,7 @@ import { RbarComponent } from './rbar/rbar.component';
 import { PartiesComponent } from './parties/parties.component';
 import { KarmaComponent } from './karma/karma.component';
 import { InfoComponent } from './info/info.component';
+import { VoteComponent } from './vote/vote.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { InfoComponent } from './info/info.component';
     RbarComponent,
     PartiesComponent,
     KarmaComponent,
-    InfoComponent
+    InfoComponent,
+    VoteComponent
   ],
   imports: [
     BrowserModule,
