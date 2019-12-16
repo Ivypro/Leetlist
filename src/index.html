@@ -12,6 +12,47 @@
   <app-root></app-root>
 
   <script type="text/javascript">
+// FRIENDS FUNCTIONS
+
+function fb1() {
+  document.getElementById('f-base-3').style.display = "none";
+ document.getElementById('f-base-2').style.display = "none";
+ document.getElementById('f-base-1').style.display = "block";
+ document.getElementById('f-tab-2').classList.remove("sel-line");
+ document.getElementById('f-tab-3').classList.remove("sel-line");
+ document.getElementById('f-tab-1').classList.add("sel-line");
+}
+
+function fb2() {
+  document.getElementById('f-base-1').style.display = "none";
+ document.getElementById('f-base-3').style.display = "none";
+ document.getElementById('f-base-2').style.display = "block";
+ document.getElementById('f-tab-1').classList.remove("sel-line");
+ document.getElementById('f-tab-3').classList.remove("sel-line");
+ document.getElementById('f-tab-2').classList.add("sel-line");
+
+}
+
+function fb3() {
+  document.getElementById('f-base-1').style.display = "none";
+ document.getElementById('f-base-2').style.display = "none";
+ document.getElementById('f-base-3').style.display = "block";
+ document.getElementById('f-tab-1').classList.remove("sel-line");
+ document.getElementById('f-tab-2').classList.remove("sel-line");
+ document.getElementById('f-tab-3').classList.add("sel-line");
+}
+
+function fviewbio() {
+  document.getElementById('wrapper-pic').style.display = "none";
+ document.getElementById('wrapper-bio').style.display = "block";
+}
+
+function fviewpic() {
+  document.getElementById('wrapper-bio').style.display = "none";
+ document.getElementById('wrapper-pic').style.display = "block";
+}
+
+// BASIC FUNCTIONS
 
   function x() {
    document.getElementById('route').style.display = "none";
